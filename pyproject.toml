@@ -1,0 +1,14 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "example_module"
+authors = [{name = "Author Name", email = "author.name@example.com"}]
+dynamic = ["version", "description"]
+
+[project.urls]
+Home = "https://author.name.example.com"
+
+[project.scripts]
+runexample = "example_module.example:main"
