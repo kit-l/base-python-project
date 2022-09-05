@@ -6,6 +6,9 @@ build-backend = "flit_core.buildapi"
 name = "example_module"
 authors = [{name = "Author Name", email = "author.name@example.com"}]
 dynamic = ["version", "description"]
+# A classifier of "Private :: Do Not Upload" will prevent this package from
+#  being uploaded to PyPI.
+classifiers = ["Private :: Do Not Upload"]
 
 [project.urls]
 Home = "https://author.name.example.com"
